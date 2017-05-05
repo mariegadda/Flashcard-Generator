@@ -13,7 +13,7 @@ function BasicCard(front, back){
 // array of font/backs of basic cards
 var basicCardArray = [
 	{
-		front: "sure I peed on her, and if I had to, I'd pee on any one of you!",
+		front: "Sure I peed on her, and if I had to, I'd pee on any one of you!",
 		back: "Joey"
 	},
 	{
@@ -30,7 +30,7 @@ var basicCardArray = [
 
 	},
 	{
-		front: "they don't know we know they know we know",
+		front: "They don't know we know they know we know",
 		back: "Phoebe"
 	}
 ];
@@ -43,9 +43,9 @@ for (var i = 0; i < basicCardArray.length; i++) {
 	var newCard = new BasicCard(basicCardArray[i].front, basicCardArray[i].back);
 	basicCardArray2.push(newCard);
 }
-//var
+//vars for keeping track of the count of which question we are on in the function, and the score.
 var score = 0;
- var count = 0;
+var count = 0;
 
 function cards(){
   if (count < basicCardArray2.length) {
@@ -73,7 +73,3 @@ function cards(){
   }
 
   cards();
-//This file should define a Node module that exports a constructor for creating basic flashcards, e.g.: module.exports = BasicCard;
-//The constructor should accept two arguments: front and back.
-//The constructed object should have a front property that contains the text on the front of the card.
-//The constructed object should have a back property that contains the text on the back of the card.

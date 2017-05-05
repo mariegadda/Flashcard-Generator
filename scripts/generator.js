@@ -2,6 +2,7 @@
 var input = process.argv[3];
 var inquirer = require("inquirer");
 
+//startgame functions asks if user wants to play friends trivia or seinfeld - seinfeld not working yet. 
 function startGame(){
   inquirer.prompt([
       {
